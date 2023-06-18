@@ -1,0 +1,119 @@
+
+.gallery{
+    display: flex;
+  }
+
+
+  .infinite-scroll-component__outerdiv{
+    width: 80%;
+  }
+  .gallery .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 2rem;
+    padding: 1rem;
+    margin: 0rem 6rem;
+    scroll-behavior: smooth;
+    overflow: hidden !important;
+    width: 85%;
+  }
+  
+  .gallery div .main-image{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+    vertical-align: top;
+  }
+
+  .gallery .user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+  }
+  .gallery .userName {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    margin: auto;
+  }
+  .gallery .userName > p {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  .gallery .userName_i {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 5px;
+    color: var(--text-primary);
+  }
+  
+  .gallery .profile {
+    margin: auto 14px;    
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+  }
+  .gallery .userDetail{
+    display: flex;
+  }
+  .gallery .userLikes {
+    font-weight: 700;
+    font-size: 14.1538px;
+    line-height: 17px;   
+    display: flex;
+    align-items: center;
+    color: var(--text-primary);
+    padding: 23px;
+  }
+  .gallery .span-2 {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+  }
+
+  
+  
+  @media screen and (max-width: 1000px) {
+    .gallery {
+      column-count: 3;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+   
+  
+    .gallery {
+      column-count: 2;
+    }
+  
+  }
+  
+  @media screen and (max-width: 600px) {
+    .gallery {
+      column-count: 1;
+    }
+  
+  }
+
+.popUp-img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+
+}
+.show-model{
+    display: block;
+}
+
